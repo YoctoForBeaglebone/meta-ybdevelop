@@ -1,0 +1,3 @@
+DEPENDS += "v4l-utils"
+PACKAGECONFIG += "v4l"
+PACKAGECONFIG += "h264"
