@@ -5,6 +5,6 @@ PR = "r1"
 inherit packagegroup
 
 RDEPENDS_${PN} = " \
-	helloworld \
-	pacman4console \
+	hostap-daemon \
+	hotspot-yb \
 "
