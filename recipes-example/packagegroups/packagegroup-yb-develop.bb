@@ -5,7 +5,15 @@ PR = "r1"
 inherit packagegroup
 
 RDEPENDS_${PN} = " \
-	helloworld\
+	helloworld \
+	pacman4console \
+	v4l-utils \
+	yavta \
+	gst-ffmpeg \
+	gstreamer \
+	gst-plugins-good-meta \
+	gst-plugins-good \
+	gst-plugins-base \
+	gst-plugins-bad \
+	gst-plugins-ugly \
 "
-#	pacman4console
-

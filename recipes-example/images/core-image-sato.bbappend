@@ -1,1 +1,1 @@
-IMAGE_INSTALL_append = " packagegroup-yb-develop"
+IMAGE_INSTALL_append = " packagegroup-yb-hotspot"

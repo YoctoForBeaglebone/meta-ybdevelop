@@ -1,0 +1,9 @@
+[Unit]
+Description=WiFi Access Point
+
+[Service]
+WorkingDirectory=/lib/systemd/scripts/
+ExecStart=/lib/systemd/scripts/aplaunch.sh
+
+[Install]
+WantedBy=runlevel1.target
