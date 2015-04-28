@@ -6,4 +6,4 @@ WorkingDirectory=/lib/systemd/scripts/
 ExecStart=/lib/systemd/scripts/aplaunch.sh
 
 [Install]
-WantedBy=runlevel1.target
+WantedBy=multi-user.target
