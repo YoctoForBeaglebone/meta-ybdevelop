@@ -14,6 +14,7 @@ SRC_URI = " \
 	file://hostapd.conf.yb \
 	file://udhcpd.conf.yb \
 	file://udhcpd.leases \
+	file://carl9170.conf \
 	"
 
 # hostapd.conf.yb udhcpd.conf.yb udhcpd.leases
@@ -23,6 +24,7 @@ do_install_append() {
       install -d ${D}${sysconfdir}
       install -m 644 ${WORKDIR}/hostapd.conf.yb ${D}${sysconfdir}
       install -m 644 ${WORKDIR}/udhcpd.conf.yb ${D}${sysconfdir}
+      install -m 644 ${WORKDIR}/carl9170.conf ${D}${sysconfdir}/modprobe.d/
       install -d ${D}${OPKGLIBDIR}/misc/
       install -m 644 ${WORKDIR}/udhcpd.leases ${D}${OPKGLIBDIR}/misc/
       install -d ${D}${systemd_unitdir}/scripts
