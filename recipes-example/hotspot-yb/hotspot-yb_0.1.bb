@@ -15,6 +15,7 @@ SRC_URI = " \
 	file://udhcpd.conf.yb \
 	file://udhcpd.leases \
 	file://carl9170.conf \
+	file://setup-gw.sh \
 	"
 
 # hostapd.conf.yb udhcpd.conf.yb udhcpd.leases
@@ -29,6 +30,7 @@ do_install_append() {
       install -m 644 ${WORKDIR}/udhcpd.leases ${D}${OPKGLIBDIR}/misc/
       install -d ${D}${systemd_unitdir}/scripts
       install -m 755 ${WORKDIR}/aplaunch.sh ${D}${systemd_unitdir}/scripts/
+      install -m 755 ${WORKDIR}/setup-gw.sh ${D}${systemd_unitdir}/scripts/
       install -d ${D}${systemd_unitdir}/system
       install -m 644 ${WORKDIR}/ap.service ${D}${systemd_unitdir}/system/
    fi
