@@ -39,7 +39,6 @@ Table of Contents
 I. Adding the ybdevelop layer to your build
 =================================================
 
---- replace with specific instructions for the ybdevelop layer ---
 
 In order to use this layer, you need to make the build system aware of
 it.
@@ -60,4 +59,5 @@ other layers needed. e.g.:
 II. Misc
 ========
 
---- This layer contain example recipes for the title Yocto For Beaglebone ---
+This layer contain example recipes for the title 
+[Using Yocto Project with Beaglebone Black](https://www.packtpub.com/hardware-and-creative/yocto-beaglebone)
